@@ -1,82 +1,55 @@
-# Luxury Wedding Invitation
+# Luxury Wedding Invitation - Afif & Misa
 
-موقع دعوة زفاف فاخر بالوردي والذهبي، مبني بـ HTML + CSS + JavaScript فقط، وجاهز للنشر على Vercel أو GitHub Pages.
+نسخة مطورة وفاخرة من موقع دعوة الزفاف بالوردي والذهبي، مستوحاة من الصور المرجعية المرفقة.
 
-## تعديل معلومات الدعوة
+## طريقة التعديل
 
-افتح ملف:
+كل بيانات الدعوة موجودة في بداية ملف:
 
-```txt
+```js
 script.js
 ```
 
-وعدّل البيانات داخل object اسمه:
+ابحث عن:
 
 ```js
-weddingConfig
+const weddingConfig = {
 ```
 
-يمكنك تغيير:
+وعدل:
 
-- اسم العريس
-- اسم العروس
+- أسماء العروسين
 - التاريخ والوقت
 - القاعة والعنوان
 - رابط الخريطة
 - رقم واتساب
-- رسالة واتساب
-- صورة القاعة
-- ملف الفيديو
-- ملف الموسيقى
-- اللغة الافتراضية
-
-## إضافة فيديو الدعوة
-
-ضع الفيديو هنا:
-
-```txt
-assets/video/wedding.mp4
-```
-
-وسيعمل زر “مشاهدة الفيديو” مباشرة.
+- رسالة تأكيد الحضور
 
 ## إضافة الموسيقى
 
-ضع ملف الموسيقى هنا:
+ضع ملف الموسيقى داخل:
 
-```txt
-assets/audio/wedding-music.mp3
+```text
+assets/audio/music.mp3
 ```
 
-إذا لم تضف ملف موسيقى، سيعمل زر الموسيقى بموسيقى ناعمة مولدة تلقائياً كبديل.
+## إضافة الفيديو
 
-## تغيير صورة القاعة
+ضع ملف الفيديو داخل:
 
-ضع صورة القاعة مثلاً:
-
-```txt
-assets/images/venue.jpg
-```
-
-ثم في `script.js` غيّر:
-
-```js
-venueImage: "assets/images/venue.jpg"
+```text
+assets/video/wedding.mp4
 ```
 
 ## النشر على Vercel
 
-1. افتح Vercel.
-2. اضغط Add New Project.
-3. اختر مستودع GitHub الذي يحتوي على الملفات.
-4. اضغط Deploy.
-5. سيتم إنشاء رابط مباشر للموقع.
+ارفع الملفات إلى GitHub ثم اربط المستودع مع Vercel.
 
-## الملفات
+الإعدادات:
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `assets/images/venue-placeholder.svg`
-- `assets/video/README.md`
-- `assets/audio/README.md`
+```text
+Framework Preset: Other
+Build Command: فارغ
+Output Directory: .
+Install Command: فارغ
+```

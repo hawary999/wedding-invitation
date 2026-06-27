@@ -3,177 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="دعوة زفاف عفيف وميسا - Wedding Invitation" />
-  <title>دعوة زفاف | Afif & Misa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f7cad8" />
+  <meta name="description" content="دعوة زفاف فاخرة لعفيف وميسا" />
+  <title>دعوة زفاف عفيف وميسا | Afif & Misa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;500;700;800&family=Great+Vibes&family=Playfair+Display:wght@500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <div class="floating-petals" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-
-    <section id="welcomeScreen" class="screen welcome-screen active" aria-label="Welcome invitation cover">
-      <div class="top-actions cover-actions">
-        <div class="lang-switch" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="ar">العربية</button>
-          <button class="lang-btn" data-lang="fr">FR</button>
-        </div>
-      </div>
-
-      <div class="cover-florals cover-florals-top"></div>
-      <div class="cover-florals cover-florals-bottom"></div>
-
-      <div class="cover-content reveal">
-        <div class="monogram" aria-hidden="true">
-          <span id="monoLeft">A</span>
-          <strong>♥</strong>
-          <span id="monoRight">M</span>
-        </div>
-        <div class="gold-line"></div>
-        <p class="cover-text" data-i18n="coverInvite">يسرنا دعوتكم</p>
-        <h1 class="cover-title" data-i18n="coverShare">لمشاركتنا أجمل أيام حياتنا</h1>
-        <div class="tiny-heart">♥</div>
-
-        <div class="envelope-wrap" aria-hidden="true">
-          <div class="envelope">
-            <div class="envelope-flap"></div>
-            <div class="envelope-body"></div>
-            <div class="seal">A<br>M</div>
-            <div class="ribbon"></div>
-          </div>
-        </div>
-
-        <button id="enterBtn" class="primary-btn enter-btn" type="button">
-          <span data-i18n="enterInvitation">دخول الدعوة</span>
-          <b>♥</b>
-        </button>
-        <div class="down-chevrons">⌄⌄</div>
-      </div>
-
-      <footer class="cover-footer">
-        <span>Afif &amp; Misa</span>
-        <i>◆</i>
-        <span>29.08.2026</span>
-        <i>◆</i>
-      </footer>
-    </section>
-
-    <main id="invitationScreen" class="screen invitation-screen" aria-label="Wedding invitation details">
-      <div class="hero-light"></div>
-      <div class="top-actions invite-actions">
-        <button id="musicBtn" class="icon-btn" type="button" aria-label="Play music">
-          <span id="musicIcon">♫</span>
-          <span id="musicPauseIcon">Ⅱ</span>
-        </button>
-        <div class="lang-switch" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="ar">العربية</button>
-          <button class="lang-btn" data-lang="fr">FR</button>
-        </div>
-      </div>
-
-      <section class="hero-section section-card reveal">
-        <div class="canopy" aria-hidden="true"></div>
-        <div class="sparkle-field" aria-hidden="true"></div>
-        <p class="pretitle" data-i18n="weddingInvitation">دعوة زفاف</p>
-        <h2 class="names-ar"><span id="groomNameAr">عفيف</span><b>💖</b><span id="brideNameAr">ميسا</span></h2>
-        <h1 class="names-en" id="coupleNameEn">Afif &amp; Misa</h1>
-        <div class="gold-ornament"></div>
-
-        <div class="date-row">
-          <span class="mini-icon">▣</span>
-          <span id="eventDateText">السبت 29 أغسطس 2026</span>
-        </div>
-        <div class="date-row time-row">
-          <span class="mini-icon">◷</span>
-          <strong id="eventTimeText">الخامسة مساءً</strong>
-        </div>
-      </section>
-
-      <section class="countdown-section section-card reveal">
-        <div class="section-title"><span></span><h3 data-i18n="remainingTime">الوقت المتبقي</h3><span></span></div>
-        <div class="countdown-grid" aria-live="polite">
-          <div class="count-box"><strong id="days">000</strong><small data-i18n="days">يوم</small></div>
-          <div class="count-box"><strong id="hours">00</strong><small data-i18n="hours">ساعة</small></div>
-          <div class="count-box"><strong id="minutes">00</strong><small data-i18n="minutes">دقيقة</small></div>
-          <div class="count-box"><strong id="seconds">00</strong><small data-i18n="seconds">ثانية</small></div>
-        </div>
-      </section>
-
-      <section class="details-section section-card reveal">
-        <div class="section-title"><span></span><h3 data-i18n="partyDetails">تفاصيل الحفل</h3><span></span></div>
-        <div class="details-grid">
-          <div class="venue-info">
-            <div class="pin">📍</div>
-            <h4 id="venueName">Salle polyvalente des Cimes</h4>
-            <p id="venueAddress">1261 Le Vaud<br>Switzerland</p>
-            <button id="mapBtn" class="small-pink-btn" type="button">
-              <span data-i18n="openMap">عرض على الخريطة</span>
-              <b>🌍</b>
-            </button>
-          </div>
-          <div class="venue-image-wrap">
-            <img id="venueImage" src="assets/images/venue-placeholder.svg" alt="Wedding venue" />
-          </div>
-        </div>
-      </section>
-
-      <section class="video-section section-card reveal">
-        <div class="video-banner">
-          <div class="play-circle" id="videoPlayIcon">▶</div>
-          <div class="video-text">
-            <h3 data-i18n="invitationVideo">فيديو الدعوة</h3>
-            <p data-i18n="videoMemory">ذكرى تبقى للأبد</p>
-            <button id="videoBtn" class="small-pink-btn" type="button">
-              <span data-i18n="watchVideo">مشاهدة الفيديو</span>
-              <b>♥</b>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="rsvp-section section-card reveal">
-        <div class="section-title"><span></span><h3>RSVP</h3><span></span></div>
-        <p class="rsvp-note" data-i18n="rsvpNote">نرجو تأكيد حضوركم لنحجز لكم مكاناً خاصاً</p>
-        <div class="rsvp-actions">
-          <button id="whatsappBtn" class="rsvp-btn whatsapp" type="button">
-            <span class="wa-icon">☘</span>
-            <span data-i18n="confirmWhatsapp">تأكيد الحضور عبر واتساب</span>
-          </button>
-          <button id="calendarBtn" class="rsvp-btn calendar" type="button">
-            <span>🗓️</span>
-            <span data-i18n="addCalendar">إضافة إلى التقويم</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="children-note section-card reveal">
-        <p data-i18n="childrenIntro">نرجو منكم تفهم رغبتنا</p>
-        <h3 data-i18n="childrenFree">بإبقاء الحفل خالياً من الأطفال،</h3>
-        <p data-i18n="childrenThanks">شاكرين لكم تعاونكم وتقديركم</p>
-        <div class="tiny-heart">♥</div>
-      </section>
-
-      <button id="topBtn" class="back-top" type="button" aria-label="Back to top">⌃</button>
-    </main>
+  <div class="noise"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="floating-layer" aria-hidden="true">
+    <span class="petal p1"></span>
+    <span class="petal p2"></span>
+    <span class="petal p3"></span>
+    <span class="petal p4"></span>
+    <span class="petal p5"></span>
+    <span class="petal p6"></span>
+    <span class="spark s1"></span>
+    <span class="spark s2"></span>
+    <span class="spark s3"></span>
+    <span class="spark s4"></span>
   </div>
 
-  <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-label="Invitation video">
-    <div class="modal-card">
-      <button id="closeVideo" class="close-btn" type="button">×</button>
+  <aside class="fixed-actions" aria-label="Quick actions">
+    <button class="round-action" id="soundToggle" type="button" title="Music">
+      <span class="sound-on">♫</span>
+      <span class="sound-off">×</span>
+    </button>
+    <button class="round-action" id="scrollTop" type="button" title="Back to top">⌃</button>
+  </aside>
+
+  <div class="language-panel" aria-label="Language switcher">
+    <button class="lang-btn is-active" data-lang="ar" type="button">عربي</button>
+    <button class="lang-btn" data-lang="fr" type="button">FR</button>
+  </div>
+
+  <main>
+    <section class="cover-screen" id="coverScreen">
+      <div class="cover-bg-image"></div>
+      <div class="cover-veil"></div>
+      <div class="luxury-frame frame-cover" aria-hidden="true">
+        <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+      </div>
+
+      <div class="cover-stage reveal-now">
+        <div class="floral-crown top-crown" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="invitation-box">
+          <div class="box-shadow"></div>
+          <div class="envelope-scene" aria-hidden="true">
+            <div class="letter-card">
+              <span class="letter-mono"><b id="monoA">A</b><i>&</i><b id="monoM">M</b></span>
+              <small>save the date</small>
+            </div>
+            <div class="envelope-base"></div>
+            <div class="envelope-lip"></div>
+            <div class="wax-seal"><span>♥</span></div>
+            <div class="silk-ribbon ribbon-v"></div>
+            <div class="silk-ribbon ribbon-h"></div>
+          </div>
+
+          <div class="cover-copy">
+            <p class="mini-label" data-i18n="coverLabel">دعوة زفاف فاخرة</p>
+            <h1 data-i18n="coverTitle">يسرنا دعوتكم لمشاركتنا أجمل أيام حياتنا</h1>
+            <p class="cover-subtitle" data-i18n="coverSubtitle">حضوركم يضيف لفرحتنا معنى لا ينسى</p>
+            <button class="gold-button" id="openInvitation" type="button">
+              <span data-i18n="openInvitation">افتح الدعوة</span>
+              <i>✦</i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cover-date-pill">
+          <span id="coverDate">29 / 08 / 2026</span>
+          <i></i>
+          <strong id="coverCouple">Afif & Misa</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="invitation-page" id="invitationPage">
+      <section class="hero section reveal">
+        <div class="hero-bg-reference"></div>
+        <div class="hero-roses left-roses" aria-hidden="true"></div>
+        <div class="hero-roses right-roses" aria-hidden="true"></div>
+        <div class="hero-card">
+          <div class="gold-arch" aria-hidden="true"></div>
+          <div class="crystal-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="mini-label" data-i18n="heroLabel">بكل الحب والسرور</p>
+          <h2 class="names-ar"><span id="brideArabic">ميسا</span><i>♥</i><span id="groomArabic">عفيف</span></h2>
+          <h1 class="names-en" id="coupleEnglish">Afif & Misa</h1>
+          <div class="ornament"><span></span><b>✦</b><span></span></div>
+          <p class="hero-text" data-i18n="heroText">نتشرف بدعوتكم لحضور حفل زفافنا ومشاركتنا لحظات الفرح</p>
+          <div class="date-card">
+            <div><small data-i18n="dateLabel">التاريخ</small><strong id="eventDateText">السبت 29 أغسطس 2026</strong></div>
+            <div><small data-i18n="timeLabel">الوقت</small><strong id="eventTimeText">الخامسة مساءً</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal countdown-section">
+        <div class="section-heading">
+          <span></span>
+          <h2 data-i18n="countdownTitle">العد التنازلي للفرحة</h2>
+          <span></span>
+        </div>
+        <div class="countdown-grid" aria-live="polite">
+          <div class="count-card"><strong id="days">000</strong><small data-i18n="days">يوم</small></div>
+          <div class="count-card"><strong id="hours">00</strong><small data-i18n="hours">ساعة</small></div>
+          <div class="count-card"><strong id="minutes">00</strong><small data-i18n="minutes">دقيقة</small></div>
+          <div class="count-card"><strong id="seconds">00</strong><small data-i18n="seconds">ثانية</small></div>
+        </div>
+      </section>
+
+      <section class="section reveal luxury-info-grid">
+        <article class="glass-panel venue-panel">
+          <div class="panel-icon">⌖</div>
+          <p class="mini-label" data-i18n="venueLabel">مكان الحفل</p>
+          <h2 id="venueName">Salle polyvalente des Cimes</h2>
+          <p id="venueAddress">1261 Le Vaud, Switzerland</p>
+          <button class="rose-button" id="mapButton" type="button">
+            <span data-i18n="mapButton">افتح الموقع على الخريطة</span>
+            <i>→</i>
+          </button>
+        </article>
+
+        <article class="image-panel">
+          <img src="assets/images/reference-luxury.png" alt="Luxury wedding inspiration" />
+          <div class="image-panel-caption">
+            <small data-i18n="atmosphereLabel">الأجواء</small>
+            <strong data-i18n="atmosphereText">ورود، شموع، وذهب فاخر</strong>
+          </div>
+        </article>
+      </section>
+
+      <section class="section reveal invitation-details">
+        <div class="detail-card">
+          <span class="detail-icon">✉</span>
+          <h3 data-i18n="welcomeMessageTitle">رسالة ترحيب</h3>
+          <p data-i18n="welcomeMessage">بقلوب تغمرها السعادة، يسعدنا أن تشاركونا بداية حكايتنا الجديدة.</p>
+        </div>
+        <div class="detail-card">
+          <span class="detail-icon">❦</span>
+          <h3 data-i18n="wishTitle">عبارة تهنئة</h3>
+          <p data-i18n="wishText">دعواتكم لنا بحياة يملؤها الحب والسكينة والبركة.</p>
+        </div>
+        <div class="detail-card">
+          <span class="detail-icon">☾</span>
+          <h3 data-i18n="kidsTitle">ملاحظة</h3>
+          <p data-i18n="kidsText">نرجو منكم تفهم رغبتنا بإبقاء الحفل خالياً من الأطفال، شاكرين لكم تقديركم.</p>
+        </div>
+      </section>
+
+      <section class="section reveal media-rsvp-grid">
+        <article class="video-panel glass-panel">
+          <div class="play-orb" id="videoButton" role="button" tabindex="0" aria-label="Play video">▶</div>
+          <p class="mini-label" data-i18n="videoLabel">فيديو الدعوة</p>
+          <h2 data-i18n="videoTitle">لحظة من الحلم</h2>
+          <p data-i18n="videoText">ضع الفيديو داخل assets/video باسم wedding.mp4 وسيظهر هنا مباشرة.</p>
+        </article>
+
+        <article class="rsvp-panel glass-panel">
+          <p class="mini-label">RSVP</p>
+          <h2 data-i18n="rsvpTitle">تأكيد الحضور</h2>
+          <p data-i18n="rsvpText">يسعدنا تأكيد حضوركم عبر واتساب أو إضافة الموعد للتقويم.</p>
+          <div class="rsvp-buttons">
+            <button class="rose-button wide" id="whatsappButton" type="button">WhatsApp</button>
+            <button class="gold-outline wide" id="calendarButton" type="button" data-i18n="calendarButton">إضافة للتقويم</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="section reveal guest-message-section">
+        <div class="section-heading">
+          <span></span>
+          <h2 data-i18n="guestBookTitle">اكتب تهنئتك للعروسين</h2>
+          <span></span>
+        </div>
+        <form class="guest-form" id="guestForm">
+          <input id="guestName" type="text" data-placeholder-ar="اسمك الكريم" data-placeholder-fr="Votre nom" placeholder="اسمك الكريم" />
+          <textarea id="guestMessage" rows="4" data-placeholder-ar="اكتب رسالة تهنئة قصيرة" data-placeholder-fr="Écrivez un message de félicitations" placeholder="اكتب رسالة تهنئة قصيرة"></textarea>
+          <button class="gold-button" type="submit"><span data-i18n="sendWish">إرسال التهنئة عبر واتساب</span><i>♥</i></button>
+        </form>
+      </section>
+
+      <footer class="luxury-footer section reveal">
+        <div class="footer-monogram"><span>A</span><i>♥</i><span>M</span></div>
+        <h2 id="footerCouple">Afif & Misa</h2>
+        <p data-i18n="footerText">في انتظاركم لتكتمل فرحتنا بحضوركم</p>
+      </footer>
+    </section>
+  </main>
+
+  <div class="video-modal" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop" id="closeVideoBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="close-modal" id="closeVideo" type="button">×</button>
       <video id="weddingVideo" controls playsinline preload="metadata">
         <source src="assets/video/wedding.mp4" type="video/mp4" />
       </video>
-      <div id="videoFallback" class="video-fallback">
-        <div class="fallback-heart">♥</div>
-        <h3 data-i18n="fallbackVideoTitle">فيديو الدعوة</h3>
-        <p data-i18n="fallbackVideoText">ضع ملف الفيديو باسم wedding.mp4 داخل مجلد assets/video ليعمل هنا مباشرة.</p>
+      <div class="video-empty">
+        <span>♥</span>
+        <h3 data-i18n="videoMissingTitle">لم يتم إضافة الفيديو بعد</h3>
+        <p data-i18n="videoMissingText">ارفع الفيديو باسم wedding.mp4 داخل مجلد assets/video.</p>
       </div>
     </div>
   </div>
+
+  <audio id="weddingAudio" loop preload="none">
+    <source src="assets/audio/music.mp3" type="audio/mpeg" />
+  </audio>
 
   <script src="script.js"></script>
 </body>
